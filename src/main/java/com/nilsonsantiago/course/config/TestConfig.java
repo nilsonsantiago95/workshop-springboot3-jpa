@@ -12,7 +12,7 @@ import com.nilsonsantiago.course.repositories.UserRepository;
 
 @Configuration
 @Profile("test")
-public class TestConfig implements CommandLineRunner{
+public class TestConfig implements CommandLineRunner {
 
 	@Autowired
 	private UserRepository userRepository;
@@ -26,7 +26,5 @@ public class TestConfig implements CommandLineRunner{
 		userRepository.saveAll(Arrays.asList(u1, u2));
 		
 	}
-	
-	
 	
 }
